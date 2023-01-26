@@ -42,6 +42,7 @@ public class autoSuggestionProg1 {
 			}
 		}
 		//it push our code in git repositry.
+		//pull latest code in our pc 
 		driver.close();
 	}
 
