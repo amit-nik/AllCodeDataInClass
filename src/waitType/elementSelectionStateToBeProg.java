@@ -23,10 +23,10 @@ public class elementSelectionStateToBeProg {
 //		scenario: - 6 (The checkbox will be checked in 0 Seconds is true or false )
 //		elementSelectionStateToBe(selectButon , true)
 				WebElement buttonselect = driver.findElement(By.xpath("//button[@id='checkbox']"));
-				//		WebElement selectButon = driver.findElement(By.xpath("//input[@type='checkbox']"));
+						WebElement selectButon = driver.findElement(By.xpath("//input[@type='checkbox']"));
 				buttonselect.click();
 				WebDriverWait w2 = new WebDriverWait(driver, Duration.ofSeconds(11));
-				w2.until(ExpectedConditions.elementSelectionStateToBe(By.xpath("//input[@type='checkbox']") , true));
+				w2.until(ExpectedConditions.elementSelectionStateToBe(selectButon , true));
 				
 				driver.close();
 		
